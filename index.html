@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fishers Family Rwanda</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --ff-yellow: #FFD700;
+      --ff-blue: #1E3A8A;
+      --ff-black: #000000;
+      --ff-white: #ffffff;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md p-4 fixed w-full top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl md:text-2xl font-bold text-[--ff-blue]">Fishers Family Rwanda</h1>
+      
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6 text-lg">
+        <li><a href="#home" class="hover:text-[--ff-blue] transition-colors duration-300">Home</a></li>
+        <li><a href="#about" class="hover:text-[--ff-blue] transition-colors duration-300">About</a></li>
+        <li><a href="#media" class="hover:text-[--ff-blue] transition-colors duration-300">Media</a></li>
+        <li><a href="#contact" class="hover:text-[--ff-blue] transition-colors duration-300">Contact</a></li>
+      </ul>
+      
+      <!-- Mobile Menu Button -->
+      <button id="menu-toggle" class="md:hidden text-2xl text-[--ff-blue]">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu hidden md:hidden bg-white mt-4 p-4 rounded-lg shadow-lg">
+      <ul class="flex flex-col space-y-4">
+        <li><a href="#home" class="block py-2 hover:text-[--ff-blue]">Home</a></li>
+        <li><a href="#about" class="block py-2 hover:text-[--ff-blue]">About</a></li>
+        <li><a href="#media" class="block py-2 hover:text-[--ff-blue]">Media</a></li>
+        <li><a href="#contact" class="block py-2 hover:text-[--ff-blue]">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section with YOUR local image -->
+  <section id="home" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <!-- Main Heading -->
+      <h1 class="hero-title">
+        <span class="block">Casting Nets of Worship</span>
+        <span class="block hero-highlight mt-2">Transforming Lives Through Gospel Music</span>
+      </h1>
+      
+      <!-- Tagline -->
+      <p class="hero-tagline">
+        A vibrant ministry in Rwanda dedicated to spreading God's love through powerful worship and heartfelt praise
+      </p>
+      
+      <!-- Verse -->
+      <div class="hero-verse">
+        <p>"And He said to them, 'Follow me, and I will make you fishers of men.'"</p>
+        <p class="verse-reference">— Matthew 4:19</p>
+      </div>
+      
+      <!-- CTA Buttons -->
+      <div class="hero-buttons">
+        <a href="#media" class="hero-btn-primary">
+          <i class="fas fa-music mr-2"></i>Watch Our Ministry
+        </a>
+        <a href="#contact" class="hero-btn-secondary">
+          <i class="fas fa-hands-praying mr-2"></i>Join Our Mission
+        </a>
+      </div>
+    </div>
+    
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <a href="#about">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section-container">
+    <h2 class="section-title">About Our Ministry</h2>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div>
+        <p class="section-text">
+          Fishers Family Rwanda is a dynamic gospel music ministry committed to uplifting hearts through spirit‑filled worship and praise. Born in the heart of Rwanda, our mission extends beyond music — we're building a community of faith, hope, and transformation.
+        </p>
+        <p class="section-text">
+          Through concerts, worship nights, and community outreach, we create spaces where people encounter God's presence and experience spiritual renewal. Our vision is to see Rwanda and all of Africa transformed by the power of worship.
+        </p>
+        <div class="flex flex-wrap gap-4 mt-6">
+          <div class="value-card">
+            <i class="fas fa-cross value-icon"></i>
+            <h4 class="value-title">Gospel-Centered</h4>
+          </div>
+          <div class="value-card bg-[--ff-yellow] bg-opacity-10">
+            <i class="fas fa-users value-icon"></i>
+            <h4 class="value-title">Community Focused</h4>
+          </div>
+          <div class="value-card">
+            <i class="fas fa-heart value-icon"></i>
+            <h4 class="value-title">Heart for Worship</h4>
+          </div>
+        </div>
+      </div>
+     <div class="rounded-xl overflow-hidden h-64 md:h-80 shadow-lg">
+  <img src="assets/fishersphoto.jpeg" alt="Ministry Team Photo" class="w-full h-full object-cover">
+</div>
+  </section>
+
+  <!-- Media Section -->
+  <section id="media" class="section-container">
+    <h2 class="section-title">Connect With Our Ministry</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+      <div class="media-card">
+        <div class="media-icon instagram">
+          <i class="fab fa-instagram"></i>
+        </div>
+        <h3 class="media-title">Instagram</h3>
+        <p class="media-description">Daily inspiration, behind-the-scenes moments, and ministry updates from our worship community.</p>
+        <a href="#" class="media-btn instagram">
+          <i class="fab fa-instagram mr-2"></i>Follow Us
+        </a>
+      </div>
+      <div class="media-card">
+        <div class="media-icon youtube">
+          <i class="fab fa-youtube"></i>
+        </div>
+        <h3 class="media-title">YouTube</h3>
+        <p class="media-description">Full worship sessions, live concerts, gospel messages, and music videos to uplift your spirit.</p>
+        <a href="#" class="media-btn youtube">
+          <i class="fab fa-youtube mr-2"></i>Subscribe Now
+        </a>
+      </div>
+      <div class="media-card">
+        <div class="media-icon facebook">
+          <i class="fab fa-facebook"></i>
+        </div>
+        <h3 class="media-title">Facebook</h3>
+        <p class="media-description">Join our growing community for live streams, event announcements, and fellowship.</p>
+        <a href="#" class="media-btn facebook">
+          <i class="fab fa-facebook mr-2"></i>Like Our Page
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-container">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-subtitle">We'd love to hear from you and partner together in ministry</p>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div class="contact-info">
+        <h3 class="contact-title">Contact Information</h3>
+        
+        <div class="space-y-6">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4 class="contact-label">Location</h4>
+              <p class="contact-detail">Kigali, Rwanda</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4 class="contact-label">Email</h4>
+              <p class="contact-detail">contact@fishersfamilyrwanda.org</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <h4 class="contact-label">Phone</h4>
+              <p class="contact-detail">+250 788 123 456</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" class="form-input" />
+        <input type="email" placeholder="Email Address" class="form-input" />
+        <textarea placeholder="Your Message" rows="4" class="form-textarea"></textarea>
+        <button type="submit" class="submit-btn">
+          <i class="fas fa-paper-plane mr-2"></i>Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h3 class="footer-title">Fishers Family Rwanda</h3>
+          <p class="footer-text">Spreading the Gospel through worship, music, and community transformation in Rwanda and beyond.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#media" class="footer-link">Media</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon youtube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Fishers Family Rwanda. All rights reserved. | Ministry in Kigali, Rwanda</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      // Change icon
+      const icon = menuToggle.querySelector('i');
+      if (icon.classList.contains('fa-bars')) {
+        icon.classList.replace('fa-bars', 'fa-times');
+      } else {
+        icon.classList.replace('fa-times', 'fa-bars');
+      }
+    });
+    
+    // Close mobile menu when clicking a link
+    const mobileLinks = document.querySelectorAll('#mobile-menu a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuToggle.querySelector('i').classList.replace('fa-times', 'fa-bars');
+      });
+    });
+    
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
